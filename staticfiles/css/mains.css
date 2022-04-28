@@ -1,0 +1,76 @@
+
+body{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,253,187,1) 100%);   
+}.project-thum{
+    width: 100%;
+}
+.top-ps-box{
+    margin-top: 160px;
+}
+.aboutme{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px
+}
+.name{
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family:Oswald;
+}
+.context{
+    text-transform: uppercase;
+    font-family: Raleway;
+}
+.list{
+    list-style: none;
+    background-color:aliceblue;
+    margin: 5px;
+    position: relative;
+}
+
+.social-icons{
+    margin: 5px;
+    width: 50px;
+    border-radius: 30%;
+}
+.box-element{
+    background-color: white;
+    width: 100%;
+    margin-top: -100px;
+}
+
+.mynav{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,253,187,1) 100%);  
+   
+}
+.navbar{
+    padding: 0px;
+}
+.my-nav-link {
+    color: white;
+    text-decoration: none; 
+    font-weight: bold;
+    margin:0px;
+    border: 0px;
+    padding:10px;
+}
+
+.ym-nav-link:link{
+    color: white;
+}
+.ym-nav-link:active{
+    color: black;
+
+}
+.my-nav-link:hover{
+    color: black;
+    background-color:rgb(127, 240, 255);
+}
+
+
+@media screen and (max-width: 1000px){
+    .top-ps-box{
+        margin-top: 20px;
+    }
+}
