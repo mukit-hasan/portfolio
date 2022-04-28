@@ -1,0 +1,138 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block title %}Home page{% endblock title %}
+
+
+{% block body %}
+ <br>
+ 
+ <div class="container">
+        <div class="card card-body shadow">
+            <div class="row">
+                <div class="col-lg-7">
+                    <img style="width:100%" src="{% static '/img/personal.jpg' %}" alt="">
+                </div>
+                <div class="col-lg-5">
+                    <div class="top-ps-box">
+                        <div><h3 style="font-weight:normal">Hi, I am</h3></div>
+                        <div class="name">Mukit Hasan</div>
+                        <p class="context">
+                            a Backend Developer
+                        </p>
+                        <div style="font-size:30px;">My Skill's</div>
+                        <div class="ul-list">
+                            
+                                    <li class="list">HTML
+                                        <div class="progress">    
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                        </div>
+                                    </li>
+                                    <li class="list">CSS
+                                        <div class="progress">    
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                        </div>
+                                    </li>
+                                    <li class="list">Python
+                                        <div class="progress">    
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                        </div>
+                                    </li>
+                                    <li class="list">Django
+                                        <div class="progress">    
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 40%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">30%</div>
+                                        </div>
+                                    </li>
+                                    <li class="list">JavaScript
+                                        <div class="progress">    
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">20%</div>
+                                        </div>
+                                    </li>                        
+                                    <li class="list">Bootstrap 5.0
+                                        <div class="progress">    
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                        </div>
+                                    </li>
+                        </div>
+                        <br>
+                        <div class="d-flex">
+                            <div class="social-icons"><a href=""><img class="social-icons" src="{% static 'img/f.png' %}" alt=""></a></div>
+                            <div class="social-icons"><a href=""><img class="social-icons" src="{% static 'img/instra.png' %}" alt=""></a></div>
+                            <div class="social-icons"><a href=""><img class="social-icons" src="{% static 'img/Tw.png' %}" alt=""></a></div>
+                            <div class="social-icons"><a href=""><img class="social-icons" src="{% static 'img/In.png' %}" alt=""></a></div>
+                        </div>
+    
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class ='box-element'>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+        <div class="container ">
+            <section id="aboutme">
+                <div class="name">About Me</div>
+
+                <p class="aboutme">
+                    Hi, I am Mukit. I have been Selflearning web development for few month and I am going to the path of a backend devloper.
+                    Currently I am learning django a python backend framework.
+                </p>
+
+            </section>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div class="container">
+        <section id="project">
+            <div class="name text-center">My Project</div>
+
+            <div class="row">
+
+                {% for project in project %}
+                <div class="col-lg-4">
+                    <div class="">
+                        <img class="project-thum" src="{{project.imageURL}}" alt="">
+                        <div class="card card">
+                            <div class="d-flex justify-content-between">
+                                <div class="d-inline-block" style="margin:5px">{{project.name}}</div>
+                                <div class="d-inline-block"> <a href="{{project.github_url}}"><img style="width: 30px;" src="{% static 'img/git.png' %} " target="_blank"  alt="{{project.name}}"></a> <a class="btn btn-success" href="{{project.url}}">visit</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% empty %}
+
+                <h2 class="text-center"> There is no Project Currently</h2>
+                {% endfor %}
+
+
+                
+            </div>
+            
+                
+
+        </section>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+{% endblock body %}
