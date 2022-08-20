@@ -60,13 +60,8 @@ body{
     color: white;
 }
 
-.project-thum{
-    width:200px;
-    height: 150px;    
-}
 .project-lm{
     margin:20px;
-    border:10px;
 }
 .ym-nav-link:active{
     color: black;
