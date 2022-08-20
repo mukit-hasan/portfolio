@@ -59,6 +59,15 @@ body{
 .ym-nav-link:link{
     color: white;
 }
+
+.project-thum{
+    width:200px;
+    height: 150px;    
+}
+.project-lm{
+    margin:20px;
+    border:10px;
+}
 .ym-nav-link:active{
     color: black;
 
@@ -67,7 +76,6 @@ body{
     color: black;
     background-color:rgb(127, 240, 255);
 }
-
 
 @media screen and (max-width: 1000px){
     .top-ps-box{
