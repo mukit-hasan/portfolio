@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-1x1*f*q-+i14goj+hg_6!km(drt_4lli-pr_@uf$v4-4pk(7!0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['mukit-portfolio.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['portfolio-mukit.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
